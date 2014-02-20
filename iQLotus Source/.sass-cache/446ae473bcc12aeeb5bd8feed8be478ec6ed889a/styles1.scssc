@@ -1,0 +1,1032 @@
+3.2.12 (Media Mark)
+d381e2aa2315206641a4279b986899b56e65ee91
+o:Sass::Tree::RootNode
+:
+@linei:@template"f"@import "compass";
+@import "sass-bootstrap";
+
+
+html{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background: image-url('iqlotus_bg.png');
+	background-size: cover;		
+}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Light';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Light') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Medium';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Medium') format('svg');
+
+		}
+
+
+div#wrapper{
+
+	@media only screen and (min-width:480px) {
+		
+		#homeHeader{
+			background:white;
+			overflow:auto;
+
+			li {
+				float: left;
+				height: 90px;
+				list-style: none;
+				margin: 5px;
+				border:0px;
+				border-right: 1px;
+				border-style:solid;
+				border-right:thick single gray;
+			}
+
+			#homeHeaderSearch{
+				li{
+					float: none;
+					margin: 0px;
+					padding: 0px;
+					border:0px;
+					height: 45px;
+				}
+
+				.formText{
+					width: 170px;
+					padding: 0px;
+					margin: 0px;
+					right: 30px;
+				}
+			}
+		}
+
+		
+
+		#iqlotusLogoDiv{
+			width: 100px;
+			height: 90px;
+			padding: 0;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			margin-right: 10px;
+			margin-top: 2px;
+		}
+
+		.homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			width: 100px;
+			padding: 0px;
+			text-align: center;
+			line-height: 90px;
+		}
+
+		.homeHeaderNavSearch{
+			width: 190px;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+
+	@media only screen and (min-width:480px) {
+		background: image-url('iqlotus_bgtop.png') no-repeat;
+		background-size: cover;
+		height: 768px;
+		margin: 0px auto;
+	}
+
+	@media only screen and (max-width:480px) {
+		background: image-url('iqlotus_bgtop.png') no-repeat;
+		background-size: 100% 100%;
+		height: 460px;
+		width: 100%;
+	}
+
+	#homeHeaderWelcome{
+		margin: 0px;
+		padding: 0px;		
+		color: white;
+		font-family: 'GeometricSlab703BT-Light', serif ;
+		
+		@media only screen and (min-width:480px) {
+		margin-top: 30px;
+		font-size: 3.6em;
+		padding-bottom: 10px;
+		}
+
+		@media only screen and (max-width:480px) {
+		margin-top: 10px;
+		font-size: 1.6em;
+		padding-bottom: 2px;
+		}
+	}
+	
+}
+
+
+
+/*
+$schedulePanel-height:520px;
+$sidePanel-height:630px;
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Light';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Light') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Medium';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Medium') format('svg');
+
+		}
+
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */
+
+/*
+	#homeHeader{
+			background-color: white;
+		}
+
+		#leftContentDiv{
+			margin-right: 0px;
+			padding-right: 0px;
+		}
+
+		#rightContentDiv{
+			margin-left: 0px;
+		}
+
+	#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			padding-bottom: 10px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 3.6em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			width: 130px;
+			height: 90px;			
+			margin: 5px;
+			margin-left: 0px;
+			left: 0px;
+			padding: 0;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		.homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 5px;
+			height: 90px;
+			width: 120px;
+			padding: 0px;
+			padding-top: 30px;
+			text-align: center;
+			line-height: 90px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+
+			.homeHeaderNavSearchBox{
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+
+			.formText{
+			 	padding-bottom: 5px;
+			 	width: 200px;
+			 }
+		}
+
+		#homeSidePanel{
+		background-color: white;
+		min-height: $sidePanel-height;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			margin: 0px auto;
+		}
+
+
+
+		#daySlideId .slider-selection {
+			background: #00ffea;
+		}
+		#daySlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		#weekSlideId .slider-selection {
+			background: #00ffea;
+		}
+		#weekSlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		.dateSlider{
+			width: 200px;
+		}
+
+		.weekSlider{
+			margin-top: 5px;
+		}
+
+		#selectedDate{
+			font-size: 3.5em;
+			color: #4397cd;
+		}
+
+		#todaybuttonDiv{
+			margin-top: 10px;
+		}
+
+
+
+		#homeSidePanelLoginForm{
+			padding: 0px;
+			margin: 0px;
+			border:0px;
+			border-bottom: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+			a{
+				font-size: 0.8em;
+			}
+			label{
+				font-size: 0.8em;
+			}
+			p{
+				line-height: 5px;
+			}
+			 .formText{
+			 	padding-bottom: 5px;
+			 }
+
+
+
+			 #buttonArea{
+			 	margin:0px;
+			 	padding: 0px;
+			 	margin-top: 10px;
+
+				 #linksDiv{
+				 	float: left;
+				 	width: 110px;
+				 }
+
+				 #buttonDiv{
+				 	float: left;
+				 }
+			}
+		}
+	}
+
+		#scheduleCalender{
+		background-color: white;
+		top: 10px;
+		min-height: $schedulePanel-height;
+
+		#headerRow{
+			height: 60px;
+			background: Red;
+		}
+		#scheduleText{
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 1.0em;
+			color: #e6e6e6;
+		}
+
+		.scheduleColumnText{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			font-size: 1.0em;
+			color: #bdbdbd;
+			
+		}
+
+		.scheduleHeaderColumnDiv{
+			margin: 10px;
+			width: 200px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+
+		.scheduleItemColumnDiv{
+			margin: 10px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+	}
+
+}
+/*
+
+
+
+*/
+/*
+.hideOutline{
+	display: none;
+	min-height: 0px;
+}
+
+
+@mixin position-absolute {
+	position: absolute;
+}
+
+
+
+
+*/
+/*
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding:0px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */
+	/*position: relative;
+	padding-left: $padding-left;
+
+	#homeHeader{
+		@include position-absolute;
+		top: 0px;
+		font-size: 0.6em;
+		
+		#homeHeaderDiv{
+			background-color: white;
+			@include position-absolute;
+			width: $content-width;
+			top: $top-value;
+
+		}
+
+
+
+
+		#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 5.2em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			margin: 5px;
+			width: 180px;
+			height: 70px;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		#homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 0px;
+			margin: 5px;
+			height: 70px;
+			width: 120px;
+			padding: 0px;
+			text-align: center;
+			line-height: 50px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+			height: 70px;
+
+			#homeHeaderNavSearchBox{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#scheduleCalender{
+		@include position-absolute;
+		background-color: white;
+		top: 190px;
+		width: $content-width;
+		height: 560px;
+	}
+
+	#homeSidePanel{
+		@include position-absolute;
+		background-color: white;
+		top: $top-value;
+		left:790px;
+		width: $sidebar-width;
+		padding-right: $padding-right;
+		height: 650px;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			width: $sidebar-width;
+			margin: 0px auto;
+		}
+	}
+}*/
+
+
+
+:@has_childrenT:@options{ :@children[o:Sass::Tree::ImportNode;i;0:@imported_file0;	@;
+[ :@imported_filename"compasso;;i;0;0;	@;
+[ ;"sass-bootstrapo:Sass::Tree::RuleNode:@parsed_ruleso:"Sass::Selector::CommaSequence:@filename" :@members[o:Sass::Selector::Sequence;[o:#Sass::Selector::SimpleSequence
+;@;[o:Sass::Selector::Element	;@:
+@name["	html;i
+:@namespace0;i
+:@sourceso:Set:
+@hash{ :@subject0;i
+;i
+;T;	@:
+@tabsi ;
+[	o:Sass::Tree::PropNode:@prop_syntax:new:@valueo:Sass::Script::String; "	100%;	@:
+@type:identifier;["min-height;i;	@;i ;
+[ o;;;; o;!; "0;	@;";#;["margin;i;	@;i ;
+[ o;;;; o;!; "0;	@;";#;["padding;i;	@;i ;
+[ o;;;; o;!; "0;	@;";#;["border;i;	@;i ;
+[ :
+@rule["	htmlo;;o;;" ;[o;;[o;
+;@9;[o;	;@9;["	body;i;0;i;o;;{ ;0;i;i;T;	@;i ;
+[o;;;; o:Sass::Script::Funcall:@keywords{ ;"image-url;i;	@:@splat0:
+@args[o;!	; "iqlotus_bg.png;i;	@;":string;["background;i;	@;i ;
+[ o;;;; o;!; "
+cover;	@;";#;["background-size;i;	@;i ;
+[ ;$["	bodyo:Sass::Tree::DirectiveNode
+; ["@font-face;i;T;	@;
+[
+o;;;; o;!; "'GeometricSlab703BT-Light';	@;";#;["font-family;i;	@;i ;
+[ o;;;; o;%;&{ ;"font-url;i;	@;'0;([o;!	; "GeomeSlaBTLig.eot;i;	@;";);["src;i;	@;i ;
+[ o;;;; o:Sass::Script::List	; [o;+	; [o;%;&{ ;"font-url;i;	@;'0;([o;!	; "GeomeSlaBTLig.woff;i;	@;";)o;%;&{ ;"format;i;	@;'0;([o;!	; "	woff;i;	@;";):@separator:
+space;i;	@o;+	; [o;%;&{ ;"font-url;i;	@;'0;([o;!	; "GeomeSlaBTLig.ttf;i;	@;";)o;%;&{ ;"format;i;	@;'0;([o;!	; "truetype;i;	@;";);,;-;i;	@o;+	; [o;%;&{ ;"font-url;i;	@;'0;([o;!	; "/GeomeSlaBTLig.svg#GeometricSlab703BT-Light;i;	@;";)o;%;&{ ;"format;i;	@;'0;([o;!	; "svg;i;	@;";);,;-;i;	@;,:
+comma;i;	@;["src;i;	@;i ;
+[ o;;;; o;!; "normal;	@;";#;["font-weight;i;	@;i ;
+[ o;;;; o;!; "normal;	@;";#;["font-style;i;	@;i ;
+[ o;*
+; ["@font-face;i!;T;	@;
+[o;;;; o;!; " 'GeometricSlab703BT-Medium';	@;";#;["font-family;i";	@;i ;
+[ o;;;; o;%;&{ ;"font-url;i#;	@;'0;([o;!	; "GeomeSlaBTLig.eot;i#;	@;";);["src;i#;	@;i ;
+[ o;;;; o;+	; [o;+	; [o;%;&{ ;"font-url;i$;	@;'0;([o;!	; "GeomeSlaBTLig.woff;i$;	@;";)o;%;&{ ;"format;i$;	@;'0;([o;!	; "	woff;i$;	@;";);,;-;i$;	@o;+	; [o;%;&{ ;"font-url;i%;	@;'0;([o;!	; "GeomeSlaBTLig.ttf;i%;	@;";)o;%;&{ ;"format;i%;	@;'0;([o;!	; "truetype;i%;	@;";);,;-;i%;	@o;+	; [o;%;&{ ;"font-url;i&;	@;'0;([o;!	; "0GeomeSlaBTLig.svg#GeometricSlab703BT-Medium;i&;	@;";)o;%;&{ ;"format;i&;	@;'0;([o;!	; "svg;i&;	@;";);,;-;i&;	@;,;.;i$;	@;["src;i&;	@;i ;
+[ o;;o;;" ;[o;;[o;
+;@Ë;[o;	;@Ë;["div;i+;0o:Sass::Selector::Id;@Ë;["wrapper;i+;i+;o;;{ ;0;i+;i+;T;	@;i ;
+[	o:Sass::Tree::MediaNode; " ;i-:@query["	only" "screen"
+ and "(o;!	; "min-width;i-;	@;";#": o:Sass::Script::Number:@original"
+480px; i‡:@numerator_units["px;i-;	@:@denominator_units[ ");T;	@;i ;
+[	o;;o;;" ;[o;;[o;
+;@;[o;/;@;["homeHeader;i/;i/;o;;{ ;0;i/;i/;T;	@;i ;
+[	o;;;; o;!; "
+white;	@;";#;["background;i0;	@;i ;
+[ o;;;; o;!; "	auto;	@;";#;["overflow;i1;	@;i ;
+[ o;;o;;" ;[o;;[o;
+;@%;[o;	;@%;["li;i3;0;i3;o;;{ ;0;i3;i3;T;	@;i ;
+[o;;;; o;!; "	left;	@;";#;["
+float;i4;	@;i ;
+[ o;;;; o;!; "	90px;	@;";#;["height;i5;	@;i ;
+[ o;;;; o;!; "	none;	@;";#;["list-style;i6;	@;i ;
+[ o;;;; o;!; "5px;	@;";#;["margin;i7;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["border;i8;	@;i ;
+[ o;;;; o;!; "1px;	@;";#;["border-right;i9;	@;i ;
+[ o;;;; o;!; "
+solid;	@;";#;["border-style;i:;	@;i ;
+[ o;;;; o;!; "thick single gray;	@;";#;["border-right;i;;	@;i ;
+[ ;$["lio;;o;;" ;[o;;[o;
+;@e;[o;/;@e;["homeHeaderSearch;i>;i>;o;;{ ;0;i>;i>;T;	@;i ;
+[o;;o;;" ;[o;;[o;
+;@s;[o;	;@s;["li;i?;0;i?;o;;{ ;0;i?;i?;T;	@;i ;
+[
+o;;;; o;!; "	none;	@;";#;["
+float;i@;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["margin;iA;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["padding;iB;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["border;iC;	@;i ;
+[ o;;;; o;!; "	45px;	@;";#;["height;iD;	@;i ;
+[ ;$["lio;;o;;" ;[o;;[o;
+;@°;[o:Sass::Selector::Class;@°;["formText;iG;iG;o;;{ ;0;iG;iG;T;	@;i ;
+[	o;;;; o;!; "
+170px;	@;";#;["
+width;iH;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["padding;iI;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["margin;iJ;	@;i ;
+[ o;;;; o;!; "	30px;	@;";#;["
+right;iK;	@;i ;
+[ ;$[".formText;$["#homeHeaderSearch;$["#homeHeadero;;o;;" ;[o;;[o;
+;@Õ;[o;/;@Õ;["iqlotusLogoDiv;iR;iR;o;;{ ;0;iR;iR;T;	@;i ;
+[o;;;; o;!; "
+100px;	@;";#;["
+width;iS;	@;i ;
+[ o;;;; o;!; "	90px;	@;";#;["height;iT;	@;i ;
+[ o;;;; o;!; "0;	@;";#;["padding;iU;	@;i ;
+[ o;;;; o;+	; [o;%;&{ ;"image-url;iV;	@;'0;([o;!	; "iqlotus_iqlogo.png;iV;	@;";)o;!	; "no-repeat;iV;	@;";#;,;-;iV;	@;["background;iV;	@;i ;
+[ o;;;; o;!; "	10px;	@;";#;["margin-right;iW;	@;i ;
+[ o;;;; o;!; "2px;	@;";#;["margin-top;iX;	@;i ;
+[ ;$["#iqlotusLogoDivo;;o;;" ;[o;;[o;
+;@	;[o;6;@	;["homeHeaderNavItem;i[;i[;o;;{ ;0;i[;i[;T;	@;i ;
+[
+o;;;; o;+	; [o;!	; "GeometricSlab703BT-Medium;i\;	@;";)o;!	; "
+serif;i\;	@;";#;,;.;i\;	@;["font-family;i\;	@;i ;
+[ o;;;; o;!; "
+100px;	@;";#;["
+width;i];	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["padding;i^;	@;i ;
+[ o;;;; o;!; "center;	@;";#;["text-align;i_;	@;i ;
+[ o;;;; o;!; "	90px;	@;";#;["line-height;i`;	@;i ;
+[ ;$[".homeHeaderNavItemo;;o;;" ;[o;;[o;
+;@;;[o;6;@;;["homeHeaderNavSearch;ic;ic;o;;{ ;0;ic;ic;T;	@;i ;
+[o;;;; o;!; "
+190px;	@;";#;["
+width;id;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["padding;ie;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["margin;if;	@;i ;
+[ ;$[".homeHeaderNavSearcho;0; " ;ij;1["	only" "screen"
+ and "(o;!	; "min-width;ij;	@;";#": o;2;3"
+480px; i‡;4["px;ij;	@;5[ ");T;	@;i ;
+[	o;;;; o;+	; [o;%;&{ ;"image-url;ik;	@;'0;([o;!	; "iqlotus_bgtop.png;ik;	@;";)o;!	; "no-repeat;ik;	@;";#;,;-;ik;	@;["background;ik;	@;i ;
+[ o;;;; o;!; "
+cover;	@;";#;["background-size;il;	@;i ;
+[ o;;;; o;!; "
+768px;	@;";#;["height;im;	@;i ;
+[ o;;;; o;!; "0px auto;	@;";#;["margin;in;	@;i ;
+[ o;0; " ;iq;1["	only" "screen"
+ and "(o;!	; "max-width;iq;	@;";#": o;2;3"
+480px; i‡;4["px;iq;	@;5[ ");T;	@;i ;
+[	o;;;; o;+	; [o;%;&{ ;"image-url;ir;	@;'0;([o;!	; "iqlotus_bgtop.png;ir;	@;";)o;!	; "no-repeat;ir;	@;";#;,;-;ir;	@;["background;ir;	@;i ;
+[ o;;;; o;!; "100% 100%;	@;";#;["background-size;is;	@;i ;
+[ o;;;; o;!; "
+460px;	@;";#;["height;it;	@;i ;
+[ o;;;; o;!; "	100%;	@;";#;["
+width;iu;	@;i ;
+[ o;;o;;" ;[o;;[o;
+;@¡;[o;/;@¡;["homeHeaderWelcome;ix;ix;o;;{ ;0;ix;ix;T;	@;i ;
+[o;;;; o;!; "0px;	@;";#;["margin;iy;	@;i ;
+[ o;;;; o;!; "0px;	@;";#;["padding;iz;	@;i ;
+[ o;;;; o;!; "
+white;	@;";#;["
+color;i{;	@;i ;
+[ o;;;; o;+	; [o;!	; "GeometricSlab703BT-Light;i|;	@;";)o;!	; "
+serif;i|;	@;";#;,;.;i|;	@;["font-family;i|;	@;i ;
+[ o;0; " ;i~;1["	only" "screen"
+ and "(o;!	; "min-width;i~;	@;";#": o;2;3"
+480px; i‡;4["px;i~;	@;5[ ");T;	@;i ;
+[o;;;; o;!; "	30px;	@;";#;["margin-top;i;	@;i ;
+[ o;;;; o;!; "
+3.6em;	@;";#;["font-size;i{;	@;i ;
+[ o;;;; o;!; "	10px;	@;";#;["padding-bottom;i|;	@;i ;
+[ o;0; " ;i;1["	only" "screen"
+ and "(o;!	; "max-width;i;	@;";#": o;2;3"
+480px; i‡;4["px;i;	@;5[ ");T;	@;i ;
+[o;;;; o;!; "	10px;	@;";#;["margin-top;iÄ;	@;i ;
+[ o;;;; o;!; "
+1.6em;	@;";#;["font-size;iÅ;	@;i ;
+[ o;;;; o;!; "2px;	@;";#;["padding-bottom;iÇ;	@;i ;
+[ ;$["#homeHeaderWelcome;$["div#wrappero:Sass::Tree::CommentNode
+; ["Ÿ	                  /*
+$schedulePanel-height:520px;
+$sidePanel-height:630px;
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Light';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Light') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Medium';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Medium') format('svg');
+
+		}
+
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */;iä;	@;
+[ ;":normalo;7
+; ["¢/*
+	#homeHeader{
+			background-color: white;
+		}
+
+		#leftContentDiv{
+			margin-right: 0px;
+			padding-right: 0px;
+		}
+
+		#rightContentDiv{
+			margin-left: 0px;
+		}
+
+	#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			padding-bottom: 10px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 3.6em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			width: 130px;
+			height: 90px;			
+			margin: 5px;
+			margin-left: 0px;
+			left: 0px;
+			padding: 0;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		.homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 5px;
+			height: 90px;
+			width: 120px;
+			padding: 0px;
+			padding-top: 30px;
+			text-align: center;
+			line-height: 90px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+
+			.homeHeaderNavSearchBox{
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+
+			.formText{
+			 	padding-bottom: 5px;
+			 	width: 200px;
+			 }
+		}
+
+		#homeSidePanel{
+		background-color: white;
+		min-height: $sidePanel-height;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			margin: 0px auto;
+		}
+
+
+
+		#daySlideId .slider-selection {
+			background: #00ffea;
+		}
+		#daySlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		#weekSlideId .slider-selection {
+			background: #00ffea;
+		}
+		#weekSlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		.dateSlider{
+			width: 200px;
+		}
+
+		.weekSlider{
+			margin-top: 5px;
+		}
+
+		#selectedDate{
+			font-size: 3.5em;
+			color: #4397cd;
+		}
+
+		#todaybuttonDiv{
+			margin-top: 10px;
+		}
+
+
+
+		#homeSidePanelLoginForm{
+			padding: 0px;
+			margin: 0px;
+			border:0px;
+			border-bottom: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+			a{
+				font-size: 0.8em;
+			}
+			label{
+				font-size: 0.8em;
+			}
+			p{
+				line-height: 5px;
+			}
+			 .formText{
+			 	padding-bottom: 5px;
+			 }
+
+
+
+			 #buttonArea{
+			 	margin:0px;
+			 	padding: 0px;
+			 	margin-top: 10px;
+
+				 #linksDiv{
+				 	float: left;
+				 	width: 110px;
+				 }
+
+				 #buttonDiv{
+				 	float: left;
+				 }
+			}
+		}
+	}
+
+		#scheduleCalender{
+		background-color: white;
+		top: 10px;
+		min-height: $schedulePanel-height;
+
+		#headerRow{
+			height: 60px;
+			background: Red;
+		}
+		#scheduleText{
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 1.0em;
+			color: #e6e6e6;
+		}
+
+		.scheduleColumnText{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			font-size: 1.0em;
+			color: #bdbdbd;
+			
+		}
+
+		.scheduleHeaderColumnDiv{
+			margin: 10px;
+			width: 200px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+
+		.scheduleItemColumnDiv{
+			margin: 10px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+	}
+
+}
+/*
+
+
+
+*/;i´;	@;
+[ ;";8o;7
+; ["t/*
+.hideOutline{
+	display: none;
+	min-height: 0px;
+}
+
+
+@mixin position-absolute {
+	position: absolute;
+}
+
+
+
+
+*/;i;	@;
+[ ;";8o;7
+; ["‰	                  /*
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding:0px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */;ié;	@;
+[ ;";8o;7
+; ["‚	/*position: relative;
+	padding-left: $padding-left;
+
+	#homeHeader{
+		@include position-absolute;
+		top: 0px;
+		font-size: 0.6em;
+		
+		#homeHeaderDiv{
+			background-color: white;
+			@include position-absolute;
+			width: $content-width;
+			top: $top-value;
+
+		}
+
+
+
+
+		#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 5.2em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			margin: 5px;
+			width: 180px;
+			height: 70px;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		#homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 0px;
+			margin: 5px;
+			height: 70px;
+			width: 120px;
+			padding: 0px;
+			text-align: center;
+			line-height: 50px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+			height: 70px;
+
+			#homeHeaderNavSearchBox{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#scheduleCalender{
+		@include position-absolute;
+		background-color: white;
+		top: 190px;
+		width: $content-width;
+		height: 560px;
+	}
+
+	#homeSidePanel{
+		@include position-absolute;
+		background-color: white;
+		top: $top-value;
+		left:790px;
+		width: $sidebar-width;
+		padding-right: $padding-right;
+		height: 650px;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			width: $sidebar-width;
+			margin: 0px auto;
+		}
+	}
+}*/;iñ;	@;
+[ ;";8

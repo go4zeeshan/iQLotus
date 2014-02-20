@@ -2,6 +2,37 @@
 // Button groups
 // --------------------------------------------------
 
+// Button carets
+//
+// Match the button text color to the arrow/caret for indicating dropdown-ness.
+
+.caret {
+  .btn-default & {
+    border-top-color: $btn-default-color;
+  }
+  .btn-primary &,
+  .btn-success &,
+  .btn-warning &,
+  .btn-danger &,
+  .btn-info & {
+    border-top-color: #fff;
+  }
+}
+.dropup {
+  & .btn-default .caret {
+    border-bottom-color: $btn-default-color;
+  }
+  .btn-primary,
+  .btn-success,
+  .btn-warning,
+  .btn-danger,
+  .btn-info {
+   .caret {
+      border-bottom-color: #fff;
+    }
+  }
+}
+
 // Make the div behave like a button
 .btn-group,
 .btn-group-vertical {
@@ -37,17 +68,18 @@
 
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
-  margin-left: -5px; // Offset the first child's margin
-  @include clearfix();
+  @include clearfix;
 
-  .btn-group,
-  .input-group {
+  .btn-group {
     float: left;
   }
+  // Space out series of button groups
   > .btn,
-  > .btn-group,
-  > .input-group {
-    margin-left: 5px;
+  > .btn-group {
+    + .btn,
+    + .btn-group {
+      margin-left: 5px;
+    }
   }
 }
 
@@ -146,8 +178,7 @@
 
 .btn-group-vertical {
   > .btn,
-  > .btn-group,
-  > .btn-group > .btn {
+  > .btn-group {
     display: block;
     float: none;
     width: 100%;
@@ -156,7 +187,7 @@
 
   // Clear floats so dropdown menus can be properly placed
   > .btn-group {
-    @include clearfix();
+    @include clearfix;
     > .btn {
       float: none;
     }
@@ -187,13 +218,13 @@
 .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
 }
-.btn-group-vertical > .btn-group:first-child:not(:last-child) {
+.btn-group-vertical > .btn-group:first-child {
   > .btn:last-child,
   > .dropdown-toggle {
     @include border-bottom-radius(0);
   }
 }
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child {
+.btn-group-vertical > .btn-group:last-child > .btn:first-child {
   @include border-top-radius(0);
 }
 
@@ -207,14 +238,10 @@
   width: 100%;
   table-layout: fixed;
   border-collapse: separate;
-  > .btn,
-  > .btn-group {
+  .btn {
     float: none;
     display: table-cell;
     width: 1%;
-  }
-  > .btn-group .btn {
-    width: 100%;
   }
 }
 
