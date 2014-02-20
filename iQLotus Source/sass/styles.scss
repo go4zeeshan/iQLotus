@@ -1,0 +1,507 @@
+@import "compass";
+@import "bootstrap/bootstrap";
+
+
+html{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+	background: image-url('iqlotus_bg.png');
+	background-size: cover;		
+}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Light';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Light') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Medium';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Medium') format('svg');
+
+		}
+
+
+div#wrapper{
+
+	@media only screen and (min-width:480px) {
+		
+		#homeHeader{
+			background:white;
+			overflow:auto;
+
+			li {
+				float: left;
+				height: 90px;
+				list-style: none;
+				margin: 5px;
+				border:0px;
+				border-right: 1px;
+				border-style:solid;
+				border-right:thick single gray;
+			}
+
+			#homeHeaderSearch{
+				li{
+					float: none;
+					margin: 0px;
+					padding: 0px;
+					border:0px;
+					height: 45px;
+				}
+
+				.formText{
+					width: 170px;
+					padding: 0px;
+					margin: 0px;
+					right: 30px;
+				}
+			}
+		}
+
+		
+
+		#iqlotusLogoDiv{
+			width: 100px;
+			height: 90px;
+			padding: 0;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			margin-right: 10px;
+			margin-top: 2px;
+		}
+
+		.homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			width: 100px;
+			padding: 0px;
+			text-align: center;
+			line-height: 90px;
+		}
+
+		.homeHeaderNavSearch{
+			width: 190px;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+
+	@media only screen and (min-width:480px) {
+		background: image-url('iqlotus_bgtop.png') no-repeat;
+		background-size: cover;
+		height: 768px;
+		margin: 0px auto;
+	}
+
+	@media only screen and (max-width:480px) {
+		background: image-url('iqlotus_bgtop.png') no-repeat;
+		background-size: 100% 100%;
+		height: 460px;
+		width: 100%;
+	}
+
+	#homeHeaderWelcome{
+		margin: 0px;
+		padding: 0px;		
+		color: white;
+		font-family: 'GeometricSlab703BT-Light', serif ;
+		
+		@media only screen and (min-width:480px) {
+		margin-top: 30px;
+		font-size: 3.6em;
+		padding-bottom: 10px;
+		}
+
+		@media only screen and (max-width:480px) {
+		margin-top: 10px;
+		font-size: 1.6em;
+		padding-bottom: 2px;
+		}
+	}
+	
+}
+
+
+
+/*
+$schedulePanel-height:520px;
+$sidePanel-height:630px;
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Light';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Light') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+		@font-face {
+		    font-family: 'GeometricSlab703BT-Medium';
+		    src: font-url('GeomeSlaBTLig.eot');
+		    src: font-url('GeomeSlaBTLig.woff') format('woff'),
+		         font-url('GeomeSlaBTLig.ttf') format('truetype'),
+		         font-url('GeomeSlaBTLig.svg#GeometricSlab703BT-Medium') format('svg');
+
+		}
+
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */
+
+/*
+	#homeHeader{
+			background-color: white;
+		}
+
+		#leftContentDiv{
+			margin-right: 0px;
+			padding-right: 0px;
+		}
+
+		#rightContentDiv{
+			margin-left: 0px;
+		}
+
+	#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			padding-bottom: 10px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 3.6em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			width: 130px;
+			height: 90px;			
+			margin: 5px;
+			margin-left: 0px;
+			left: 0px;
+			padding: 0;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		.homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 5px;
+			height: 90px;
+			width: 120px;
+			padding: 0px;
+			padding-top: 30px;
+			text-align: center;
+			line-height: 90px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+
+			.homeHeaderNavSearchBox{
+				margin-top: 10px;
+				margin-left: 5px;
+			}
+
+			.formText{
+			 	padding-bottom: 5px;
+			 	width: 200px;
+			 }
+		}
+
+		#homeSidePanel{
+		background-color: white;
+		min-height: $sidePanel-height;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			margin: 0px auto;
+		}
+
+
+
+		#daySlideId .slider-selection {
+			background: #00ffea;
+		}
+		#daySlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		#weekSlideId .slider-selection {
+			background: #00ffea;
+		}
+		#weekSlideId .slider-handle {
+			background: #d7d7d7;
+		}
+
+		.dateSlider{
+			width: 200px;
+		}
+
+		.weekSlider{
+			margin-top: 5px;
+		}
+
+		#selectedDate{
+			font-size: 3.5em;
+			color: #4397cd;
+		}
+
+		#todaybuttonDiv{
+			margin-top: 10px;
+		}
+
+
+
+		#homeSidePanelLoginForm{
+			padding: 0px;
+			margin: 0px;
+			border:0px;
+			border-bottom: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+			a{
+				font-size: 0.8em;
+			}
+			label{
+				font-size: 0.8em;
+			}
+			p{
+				line-height: 5px;
+			}
+			 .formText{
+			 	padding-bottom: 5px;
+			 }
+
+
+
+			 #buttonArea{
+			 	margin:0px;
+			 	padding: 0px;
+			 	margin-top: 10px;
+
+				 #linksDiv{
+				 	float: left;
+				 	width: 110px;
+				 }
+
+				 #buttonDiv{
+				 	float: left;
+				 }
+			}
+		}
+	}
+
+		#scheduleCalender{
+		background-color: white;
+		top: 10px;
+		min-height: $schedulePanel-height;
+
+		#headerRow{
+			height: 60px;
+			background: Red;
+		}
+		#scheduleText{
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 1.0em;
+			color: #e6e6e6;
+		}
+
+		.scheduleColumnText{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			font-size: 1.0em;
+			color: #bdbdbd;
+			
+		}
+
+		.scheduleHeaderColumnDiv{
+			margin: 10px;
+			width: 200px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+
+		.scheduleItemColumnDiv{
+			margin: 10px;
+			border:0px;
+			height: 100px;
+			border-right: 1px;
+			border-style:solid;
+			border-bottom:thick single gray;
+
+		}
+	}
+
+}
+/*
+
+
+
+*/
+/*
+.hideOutline{
+	display: none;
+	min-height: 0px;
+}
+
+
+@mixin position-absolute {
+	position: absolute;
+}
+
+
+
+
+*/
+/*
+div#wrapper{
+	margin: 0px auto;
+	background: image-url('iqlotus_bgtop.png') no-repeat;
+	width:1024px;	
+	height:768px;
+	padding:0px;
+	padding-top: 1px; /*  This is added to avoid collapsing margin effect. */
+	/*position: relative;
+	padding-left: $padding-left;
+
+	#homeHeader{
+		@include position-absolute;
+		top: 0px;
+		font-size: 0.6em;
+		
+		#homeHeaderDiv{
+			background-color: white;
+			@include position-absolute;
+			width: $content-width;
+			top: $top-value;
+
+		}
+
+
+
+
+		#homeHeaderWelcome{
+			margin: 0px;
+			margin-top: 30px;
+			font-size: 4em;
+			padding: 0px;
+			color: white;
+			font-family: 'GeometricSlab703BT-Light', serif ;
+			font-size: 5.2em;
+		}
+
+		#homeHeaderNavLogo{
+			float: left;
+			margin: 5px;
+			width: 180px;
+			height: 70px;
+			background: image-url('iqlotus_iqlogo.png') no-repeat;
+			background-position: center;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+		}
+
+		#homeHeaderNavItem{
+			font-family: 'GeometricSlab703BT-Medium' , serif ;
+			float: left;
+			margin: 0px;
+			margin: 5px;
+			height: 70px;
+			width: 120px;
+			padding: 0px;
+			text-align: center;
+			line-height: 50px;
+			border:0px;
+			border-right: 1px;
+			border-style:solid;
+			border-right:thick single gray;
+
+		}
+
+		#homeHeaderNavSearch{
+			float: left;
+			margin: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 0px;
+			height: 70px;
+
+			#homeHeaderNavSearchBox{
+				margin-top: 10px;
+			}
+		}
+	}
+
+	#scheduleCalender{
+		@include position-absolute;
+		background-color: white;
+		top: 190px;
+		width: $content-width;
+		height: 560px;
+	}
+
+	#homeSidePanel{
+		@include position-absolute;
+		background-color: white;
+		top: $top-value;
+		left:790px;
+		width: $sidebar-width;
+		padding-right: $padding-right;
+		height: 650px;
+
+		#homeSidePanelBGLOGO{
+			background: image-url('iqlotus_bklogo.png') no-repeat;
+			background-position: center;
+			height: 200px;
+			width: $sidebar-width;
+			margin: 0px auto;
+		}
+	}
+}*/
+
+
+
