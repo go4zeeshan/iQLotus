@@ -7799,37 +7799,11 @@ body {
 }
 
 /* line 16, ../sass/styles.scss */
-.navbar-wrapper .navbar {
+.navbar-header {
+  text-align: center;
+}
+
+/* line 22, ../sass/styles.scss */
+.navbar {
   border-radius: 0px;
-}
-
-/* line 20, ../sass/styles.scss */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 20;
-}
-
-/* line 28, ../sass/styles.scss */
-.navbar-wrapper .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-/* line 32, ../sass/styles.scss */
-.navbar-wrapper .navbar {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  /* line 45, ../sass/styles.scss */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
 }
